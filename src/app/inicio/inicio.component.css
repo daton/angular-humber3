@@ -1,7 +1,20 @@
+body{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+    color: black; 
+    font-size: 10pt; 
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #E2E2E2;
+}
+
 .example-card {
     max-width: 400px;
     margin-left: auto;
 margin-right: auto;
+margin-top: 20px;
 
   }
   
@@ -9,3 +22,13 @@ margin-right: auto;
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
   }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+

@@ -22,7 +22,8 @@ import {MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,MatI
     BrowserModule,
     AppRoutingModule,
    ClarityModule,
-   MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,MatInputModule,MatIconModule,
+   MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,
+   MatInputModule,MatIconModule,BrowserAnimationsModule,
     NgbModule.forRoot()
   ],
   providers: [],
