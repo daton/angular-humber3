@@ -10,20 +10,26 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  
 import {MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,MatInputModule,MatIconModule} from '@angular/material';
+import { PrincipalComponent } from './principal/principal.component';
+import { ConsulaComponent } from './consula/consula.component';
+import {FileUploadModule} from 'primeng/primeng';
+
  
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent
+    InicioComponent,
+    PrincipalComponent,
+    ConsulaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
    ClarityModule,
    MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,
-   MatInputModule,MatIconModule,BrowserAnimationsModule,
+   MatInputModule,MatIconModule,BrowserAnimationsModule,FileUploadModule,
     NgbModule.forRoot()
   ],
   providers: [],

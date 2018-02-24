@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -7,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  model = {
-    left: true,
-    middle: false,
-    right: false
-  };
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  ingresar(){
+    this.router.navigate(["/principal"], { skipLocationChange: true });
   }
 
 }
