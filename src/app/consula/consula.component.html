@@ -1,5 +1,5 @@
 <h3>Consultas</h3>
-<p-fileUpload name="file" auto="auto"  (onUpload)="onBasicUpload($event)"  url="http://geradmin3.herokuapp.com/consultaoii"
+<p-fileUpload name="file" auto="auto"  (onUpload)="onBasicUpload($event)"  url="http://localhost:9000/consultaoii"
 chooseLabel="Seleccionar archivo"
 uploadLabel="Cargar archivo!"
 cancelLabel="Cancelar"
@@ -22,10 +22,12 @@ cancelLabel="Cancelar"
         </dxo-editing>
         <dxo-selection mode="multiple"></dxo-selection>
         
-        <dxi-column dataField="nosecuenc" [width]="100" caption="Num Sec." [width]="55"></dxi-column>
+        <dxi-column dataField="nosecuenc" [width]="100" caption="Num Sec." [width]="40"></dxi-column>
         <dxi-column dataField="paterno"></dxi-column>
         <dxi-column dataField="materno"></dxi-column>
         <dxi-column dataField="nombre"></dxi-column>
-        <dxi-column dataField="accion"[width]="125"></dxi-column>
+        <dxi-column dataField="fecha_impe.year" caption="Año de último pad."></dxi-column>
+        <dxi-column dataField="desc_oii" [width]="200" caption="Padecimiento"></dxi-column>
+        <dxi-column dataField="accion" [width]="100"></dxi-column>
     </dx-data-grid>
 </div>

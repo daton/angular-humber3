@@ -6,6 +6,8 @@ export interface ConsultaOii {
     accion?:string //dictamen
     extraprima?:number
     fec_nac?:Object[]
+    fecha_impe?:Object[]
+    desc_oii?:string
 
 
 }
