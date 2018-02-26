@@ -16,24 +16,31 @@
   <div class="content-container">
       <div class="content-area">
         <!--<img src="assets/imagenes/logo2.png">-->
-       
-         <app-consula></app-consula>
+        <router-outlet></router-outlet>
+    <router-outlet name="./"></router-outlet>
+    <router-outlet name="catalogo"></router-outlet>
+    <router-outlet name="otros"></router-outlet>
+      
       </div> <!-- Termina content-area -->
         
 
       <clr-vertical-nav>
 
-        <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+        <a clrVerticalNavLink routerLink="./"   skipLocationChange routerLinkActive="active">
             <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
             Consultas
         </a>
-        <a clrVerticalNavLink routerLink="./electric" routerLinkActive="active">
+        <a clrVerticalNavLink routerLink="./catalogo" skipLocationChange  routerLinkActive="active">
             <clr-icon clrVerticalNavIcon shape="bolt"></clr-icon>
-            Excedentes
+            Catálogo
         </a>
-        <a clrVerticalNavLink routerLink="./poison" routerLinkActive="active">
-            <clr-icon clrVerticalNavIcon shape="note"></clr-icon>
+        <a clrVerticalNavLink routerLink="./otros"   skipLocationChange routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="library"></clr-icon>
             Otros
+        </a>
+        <a clrVerticalNavLink routerLink="/inicio" routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="logout"></clr-icon>
+            Salir
         </a>
         
     </clr-vertical-nav>

@@ -17,6 +17,8 @@ import { DxButtonModule } from 'devextreme-angular';
 import { DxCalendarModule } from 'devextreme-angular';
 import { DxDataGridModule ,DxTextBoxModule,DxCheckBoxModule, DxSelectBoxModule , DxFileUploaderModule} from 'devextreme-angular';
 import { alert } from 'devextreme/ui/dialog';
+import { OtrosComponent } from './otros/otros.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
  
 
@@ -26,7 +28,9 @@ import { alert } from 'devextreme/ui/dialog';
     AppComponent,
     InicioComponent,
     PrincipalComponent,
-    ConsulaComponent
+    ConsulaComponent,
+    OtrosComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,
