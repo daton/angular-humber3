@@ -1,6 +1,31 @@
 <h3>Consultas</h3>
-<p-fileUpload name="file"   (onUpload)="onBasicUpload($event)"  url="http://localhost:9000/consultaoii"
+<p-fileUpload name="file" auto="auto"  (onUpload)="onBasicUpload($event)"  url="http://geradmin3.herokuapp.com/consultaoii"
 chooseLabel="Seleccionar archivo"
 uploadLabel="Cargar archivo!"
 cancelLabel="Cancelar"
 ></p-fileUpload>
+
+<h3 [hidden]="noSeHaCargado">Personas con antecedentes a revisar</h3>
+
+
+<div id="data-grid-demo">
+  
+    <dx-data-grid [hidden]="noSeHaCargado"
+        id="gridContainer"
+        [(dataSource)]="listaOii"
+        (onSelectionChanged)="selectionChanged($event)">
+        
+        <dxo-paging [enabled]="true"></dxo-paging>
+        <dxo-editing 
+            mode="cell"
+            [allowUpdating]="true">
+        </dxo-editing>
+        <dxo-selection mode="multiple"></dxo-selection>
+        
+        <dxi-column dataField="nosecuenc" [width]="100" caption="Num Sec." [width]="55"></dxi-column>
+        <dxi-column dataField="paterno"></dxi-column>
+        <dxi-column dataField="materno"></dxi-column>
+        <dxi-column dataField="nombre"></dxi-column>
+        <dxi-column dataField="accion"[width]="125"></dxi-column>
+    </dx-data-grid>
+</div>

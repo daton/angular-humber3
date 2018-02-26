@@ -13,6 +13,10 @@ import {MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,MatI
 import { PrincipalComponent } from './principal/principal.component';
 import { ConsulaComponent } from './consula/consula.component';
 import {FileUploadModule} from 'primeng/primeng';
+import { DxButtonModule } from 'devextreme-angular';
+import { DxCalendarModule } from 'devextreme-angular';
+import { DxDataGridModule ,DxTextBoxModule,DxCheckBoxModule, DxSelectBoxModule , DxFileUploaderModule} from 'devextreme-angular';
+import { alert } from 'devextreme/ui/dialog';
 
  
 
@@ -30,6 +34,7 @@ import {FileUploadModule} from 'primeng/primeng';
    ClarityModule,
    MatButtonModule, MatCheckboxModule,MatCardModule, MatGridListModule,
    MatInputModule,MatIconModule,BrowserAnimationsModule,FileUploadModule,
+   DxDataGridModule ,DxTextBoxModule,DxCheckBoxModule, DxSelectBoxModule , DxFileUploaderModule,
     NgbModule.forRoot()
   ],
   providers: [],
