@@ -1,40 +1,17 @@
 <div class="main-container">
-  <div class="alert alert-app-level alert-info">
-    
-    <div class="alert-items">
-      <div class="alert-item static">
-          <div class="alert-icon-wrapper">
-              <clr-icon class="alert-icon" shape="logout"></clr-icon>
-          </div>
-          <div class="alert-text">
-              Grupo Eductivo Editorial RADO
-          </div>
-          <div class="alert-actions">
-              <button class="btn alert-action"  (click)="salir()" >Salir</button>
-          </div>
-      </div>
-  </div>
-
-
-
-
-
-
-  </div>
-  <header class="header header-6">
-    <div class="branding">
-      <div class="title">GEDUCATIVO</div>
-    </div>
-    <div class="header-nav">
-        <a href="javascript://" class="active nav-link nav-text">Exámenes</a>
-        <a href="javascript://" class="nav-link nav-text">Evaluaciones</a>
-    </div>
-    <div class="header-actions">
-        <a href="..." class="nav-link nav-icon">
-            <clr-icon shape="envelope"></clr-icon>
+    <header class="header-6">
+      <div class="branding">
+        <a class="nav-link">
+          <clr-icon shape="home" size="24"></clr-icon>
+          <span class="title">MetLife</span>
         </a>
-    </div>
-  </header>
+      </div>
+      <div class="header-nav">
+        <a class="active nav-link nav-text">Inicio</a>
+        <a class="nav-link nav-text">Administración</a>
+      </div>
+    </header>
+  
  
   <div class="content-container">
       <div class="content-area">
@@ -44,25 +21,21 @@
       </div> <!-- Termina content-area -->
         
 
-      <nav class="sidenav">
-            <section class="sidenav-content">
-                    <a href="javascript://" class="nav-link active">
-                        Grupos
-                    </a>
-                    <a href="javascript://" class="nav-link">
-                        Ejercicios
-                    </a>
-                    <section class="nav-group collapsible">
-                        <input id="tabexample1" type="checkbox">
-                        <label for="tabexample1">Tareas</label>
-                        <ul class="nav-list">
-                            <li><a class="nav-link">Evaluaciones</a></li>
-                            <li><a class="nav-link">Estadísticas</a></li>
-                        </ul>
-                    </section>
-                    
-                </section>
-       
-      </nav>
+      <clr-vertical-nav>
+
+        <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+            Consultas
+        </a>
+        <a clrVerticalNavLink routerLink="./electric" routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="bolt"></clr-icon>
+            Excedentes
+        </a>
+        <a clrVerticalNavLink routerLink="./poison" routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="note"></clr-icon>
+            Otros
+        </a>
+        
+    </clr-vertical-nav>
   </div>
 </div>
