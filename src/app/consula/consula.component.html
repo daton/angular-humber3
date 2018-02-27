@@ -1,5 +1,5 @@
 <h3>Consultas</h3>
-<p-fileUpload name="file" auto="auto"  (onUpload)="onBasicUpload($event)"  url="http://localhost:9000/consultaoii"
+<p-fileUpload name="file" auto="auto"  (onUpload)="onBasicUpload($event)"  url="http://geradmin3.herokuapp.com/consultaoii"
 chooseLabel="Seleccionar archivo"
 uploadLabel="Cargar archivo!"
 cancelLabel="Cancelar"
@@ -28,6 +28,7 @@ cancelLabel="Cancelar"
         <dxi-column dataField="nombre"></dxi-column>
         <dxi-column dataField="fecha_impe.year" caption="Año de último pad."></dxi-column>
         <dxi-column dataField="desc_oii" [width]="200" caption="Padecimiento"></dxi-column>
+        <dxi-column dataField="bas_extraprima" caption="extraprima"></dxi-column>
         <dxi-column dataField="accion" [width]="100"></dxi-column>
     </dx-data-grid>
 </div>

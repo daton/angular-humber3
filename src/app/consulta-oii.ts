@@ -8,6 +8,7 @@ export interface ConsultaOii {
     fec_nac?:Object[]
     fecha_impe?:Object[]
     desc_oii?:string
+    bas_extraprima?:number
 
 
 }
